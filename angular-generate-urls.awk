@@ -36,7 +36,7 @@
     ## Print the URL and the frequency and priority if given.
     printf("%s%s%s%s\n",
            domain,
-           $2 != "/" ? $2 : "",
+           $2,
            frequency ? sprintf(" changefreq=%s", frequency) : "",
            priority ? sprintf(" priority=%.1f", priority) : "")
 }
